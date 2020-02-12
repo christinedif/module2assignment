@@ -1,0 +1,200 @@
+
+/********** Base styles **********/
+* {
+box-sizing: border-box;
+padding:10px;
+font-family: Helvetica;
+
+}
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.block1{
+    background-color: #EE836C;
+    width: 170px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding:10px;
+
+}
+
+.block2 {
+    background-color: #F70900;
+    width: 170px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color:white;
+    
+}
+
+.block3 {
+    background-color: #F9CF38;
+    width: 170px;
+    border: 1px solid black;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+p {
+  background-color: #A9A9A9;
+  width: 100%;
+  height: 200px;
+  color: white;
+  float:inherit;
+  word-wrap: break-word;
+  overflow-y: auto;
+  cursor: row-resize; 
+
+
+}
+
+#p1{
+  background-color: #A52A2A;
+  top: 0;
+  right: 0;
+  overflow-y: auto;
+ 
+}
+
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3{
+    float: left;
+    border: 1px solid black;
+    background-color: #A9A9A9;
+    position: relative;
+    margin:10px;
+    align-items: center
+  }
+  .col-lg-1 {
+    width: 30%;
+  }
+  .col-lg-2 {
+    width: 30%;
+  }
+  .col-lg-3 {
+    width: 30%;
+  }
+
+  h1:before{
+    content:'Our Menu';
+    text-align: left;
+  }
+  .block1:before{
+    content: 'Chicken';
+  }
+
+  .block2:before{
+    content: 'Beef';
+
+  }
+
+  .block3:before{
+    content: 'Sushi';
+  }
+
+   p{
+    margin-top:40px;
+  }
+  
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+ .col-md-1, .col-md-2, .col-md-3{
+    float: left;
+    background-color: #A9A9A9;
+    position: relative;
+    border: 1px solid black;
+    margin:10px;
+  }
+  .col-md-1 {
+    width: 47%;  
+  }
+  .col-md-2 {
+    width: 47%;
+  }
+  .col-md-3 {
+    width: 96%;
+  }
+   .block1:before{
+    content: 'Chicken'
+  }
+
+  .block2:before{
+    content: 'Beef';
+  }
+
+  .block3:before{
+    content: 'Sushi'
+  }
+   p{
+     margin-top:40px;
+  }
+  h1:before{
+    content:'Our Menu';
+    text-align: left;
+  }
+}
+
+@media (max-width: 767px) {
+   .col-sm-1, .col-sm-2, .col-sm-3{
+    float: left;
+    margin:10px;
+    position: relative;
+    background-color: #A9A9A9;
+    border: 1px solid black;
+
+  }
+  .col-sm-1 {
+    width: 100.00%;
+
+  }
+  .col-sm-2 {
+    width: 100.00%;
+  }
+  .col-sm-3 {
+    width: 100.00%;
+  }
+ 
+  .block2,.block1,.block3{
+    width:100.00%;
+    text-align: center;
+  }
+   .block1:after{
+    content:'Chinese Orange Chicken made with crispy fried chicken covered in an authentic orange sauce. ';
+    B
+  }
+  .block2:after{
+    content:'This recipe for Beef and broccoli stir fry is a classic dish of beef sauteed with fresh broccoli florets and coated in a savory sauce.'
+  }
+  .block3:after{
+    content:'Get the Volcano Roll! It consists of a spicy tuna and cucumber in the middle with tempura rock shrimp on top and complemented perfectly with a basil oil. '
+  }
+  p{
+     margin-top:50px;
+  }
+  h1:before{
+    content:'Categories';
+    float:left;
+    margin:10px;
+    font-family: Tahoma;
+    font-size:0.7em;
+  }
+
+
+
+}
