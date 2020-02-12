@@ -179,10 +179,10 @@ p {
     B
   }
   .block2:after{
-    content:'This recipe for Beef and broccoli stir fry is a classic dish of beef sauteed with fresh broccoli florets and coated in a savory sauce.'
+    content:'This recipe for Beef and broccoli stir fry is a classic dish of beef sauteed with fresh broccoli florets.'
   }
   .block3:after{
-    content:'Get the Volcano Roll! It consists of a spicy tuna and cucumber in the middle with tempura rock shrimp on top and complemented perfectly with a basil oil. '
+    content:'Get the Volcano Roll! It consists of a spicy tuna and cucumber in the middle with tempura rock shrimp. '
   }
   p{
      margin-top:50px;
